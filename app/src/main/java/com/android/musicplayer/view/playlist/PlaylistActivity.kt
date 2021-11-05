@@ -67,6 +67,12 @@ class PlaylistActivity : BaseSongPlayerActivity(), OnPlaylistAdapterListener {
         }
     }
 
+    /**
+     * Method to  Add song to the Playlist
+     * Takes input the metadat of the song
+     *
+     * @param musicData
+     */
     private fun addSong(musicData: Uri) {
         /*    val cursor = activity?.contentResolver?.query(musicData, null,null, null, null)*/
         val cursor = contentResolver?.query(
@@ -115,7 +121,13 @@ class PlaylistActivity : BaseSongPlayerActivity(), OnPlaylistAdapterListener {
         cursor?.close()
     }
 
-
+    /**
+     * Method to check whether
+     * storage READ access is
+     * granted or not
+     *
+     * @return Boolean
+     */
     private fun isReadPhoneStatePermissionGranted(): Boolean {
         val firstPermissionResult = ContextCompat.checkSelfPermission(
             this,
@@ -124,6 +136,12 @@ class PlaylistActivity : BaseSongPlayerActivity(), OnPlaylistAdapterListener {
         return firstPermissionResult == PackageManager.PERMISSION_GRANTED
     }
 
+    /**
+     * Method to show an alert dialog box
+     * before deleting a song.
+     *
+     * @param song
+     */
     private fun showRemoveSongItemConfirmDialog(song: Song) {
         // setup the alert builder
         AlertDialog.Builder(this)
@@ -141,16 +159,35 @@ class PlaylistActivity : BaseSongPlayerActivity(), OnPlaylistAdapterListener {
             .show()
     }
 
+    /**
+     * Method invoked when user tries
+     * to remove song from the playlist.
+     *
+     * @param song
+     */
     override fun removeSongItem(song: Song) {
         showRemoveSongItemConfirmDialog(song)
     }
 
+    /**
+     * Method to remove music from the
+     * playlist.
+     *
+     * @param song
+     */
     private fun removeMusicFromList(song: Song) {
         songPlayerViewModel.stop()
         viewModel.removeItemFromList(song)
     }
 
-
+    /**
+     * Method invoked after storage
+     * READ permission is asked.
+     *
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     override fun onRequestPermissionsResult(
         requestCode: Int,
         @NonNull permissions: Array<String>,
@@ -172,19 +209,29 @@ class PlaylistActivity : BaseSongPlayerActivity(), OnPlaylistAdapterListener {
         }
     }
 
+    /**
+     * Opens up the list including music
+     *
+     */
     private fun openMusicList() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Audio.Media.EXTERNAL_CONTENT_URI)
         startActivityForResult(intent, PICK_AUDIO_KEY)
     }
 
-
+    /**
+     * Method to start playing song.
+     * Responsible for starting the
+     * SongPlayerActivity
+     *
+     * @param song
+     * @param songs
+     */
     override fun playSong(song: Song, songs: ArrayList<Song>) {
         SongPlayerActivity.start(this, song, songs)
     }
 
 
     companion object {
-
         private val TAG = PlaylistActivity::class.java.name
         const val REQUEST_PERMISSION_READ_EXTERNAL_STORAGE_CODE = 7031
         const val PICK_AUDIO_KEY = 2017

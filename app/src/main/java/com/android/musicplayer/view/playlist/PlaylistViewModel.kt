@@ -16,14 +16,31 @@ class PlaylistViewModel(
 
     val playlistData = MutableLiveData<List<Song>>()
 
+    /**
+     * Store the metadata of
+     * the music inside ROOM
+     *
+     * @param song
+     */
     fun saveSongData(song: Song) {
         saveSongDataUseCase.saveSongItem(song)
     }
 
+    /**
+     * Gets a list of music(s)
+     * from ROOM
+     *
+     */
     fun getSongsFromDb() {
         playlistData.value = getSongsUseCase.getSongs()
     }
 
+    /**
+     * Removes passed music from
+     * ROOM
+     *
+     * @param song
+     */
     fun removeItemFromList(song: Song) {
         deleteSongUseCase.deleteSongItem(song)
         val list = playlistData.value as ArrayList<Song>

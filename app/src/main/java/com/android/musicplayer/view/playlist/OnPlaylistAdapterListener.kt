@@ -1,5 +1,4 @@
 package com.android.musicplayer.view.playlist
-
 import com.android.musicplayer.data.model.Song
 
 /**
