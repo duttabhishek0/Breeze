@@ -11,6 +11,7 @@
         android:layout_height="110dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:src="@drawable/placeholde"
         android:adjustViewBounds="true"
         android:scaleType="fitXY" />
 

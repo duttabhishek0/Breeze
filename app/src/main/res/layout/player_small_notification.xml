@@ -12,6 +12,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:adjustViewBounds="true"
+        android:src="@drawable/placeholde"
         android:scaleType="fitXY" />
 
     <ImageView
@@ -51,16 +52,16 @@
         android:textSize="@dimen/caption" />
 
     <RelativeLayout
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
+        android:id="@+id/notification_controller_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:id="@+id/notification_controller_container"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:layout_toEndOf="@+id/expanded_notification_singer_name_text_view"
-        android:layout_toRightOf="@+id/expanded_notification_singer_name_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_toRightOf="@+id/expanded_notification_singer_name_text_view">
 
 
         <ImageView
@@ -68,10 +69,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="8dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/baseline_pause_black_48" />
 
         <ImageView
@@ -79,19 +80,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="8dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/baseline_play_arrow_black_48" />
 
         <ImageView
             android:id="@+id/notification_skip_back_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
             android:scaleType="fitCenter"
             android:src="@drawable/baseline_skip_previous_black_36" />
 
@@ -100,12 +101,12 @@
             android:id="@+id/notification_skip_next_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/baseline_skip_next_black_36"/>
+            android:src="@drawable/baseline_skip_next_black_36" />
 
     </RelativeLayout>
 

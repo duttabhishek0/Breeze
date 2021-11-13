@@ -244,7 +244,7 @@ constructor(private val mService: SongPlayerService) : BroadcastReceiver() {
             // use a placeholder art while the remote art is being downloaded
             expandedRemoteViews.setImageViewResource(
                 R.id.expanded_notification_image_view,
-                R.drawable.placeholder
+                R.drawable.placeholde
             )
         }
 
@@ -293,7 +293,7 @@ constructor(private val mService: SongPlayerService) : BroadcastReceiver() {
         // use a placeholder art while the remote art is being downloaded
         collapsedRemoteViews.setImageViewResource(
             R.id.collapsed_notification_image_view,
-            R.drawable.placeholder
+            R.drawable.placeholde
         )
         collapsedRemoteViews.setViewVisibility(
             R.id.collapsed_notification_skip_next_image_view,
