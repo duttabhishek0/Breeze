@@ -1,3 +1,20 @@
+/**
+Copyright (c) 2021 ABHISHEK (https://github.com/duttabhishek0)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+ */
+
 package com.android.musicplayer.view.playlist
 
 import android.Manifest
@@ -7,10 +24,10 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
+import android.widget.Toast
 import androidx.annotation.NonNull
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
-import androidx.lifecycle.Observer
 import com.android.musicplayer.R
 import com.android.musicplayer.data.model.Song
 import com.android.musicplayer.view.songplayer.SongPlayerActivity
@@ -44,7 +61,7 @@ class PlaylistActivity : BaseSongPlayerActivity(), OnPlaylistAdapterListener {
             } else openMusicList()
         }
 
-        viewModel.playlistData.observe(this, Observer {
+        viewModel.playlistData.observe(this, {
             adapter?.songs = it
         })
     }
@@ -150,9 +167,11 @@ class PlaylistActivity : BaseSongPlayerActivity(), OnPlaylistAdapterListener {
             .apply {
                 setPositiveButton(R.string.yes) { _, _ ->
                     removeMusicFromList(song)
+                    Toast.makeText(context,song.songName + " Removed",Toast.LENGTH_SHORT).show()
                 }
                 setNegativeButton(R.string.no) { _, _ ->
                     // User cancelled the dialog
+                    Toast.makeText(context,"No song removed",Toast.LENGTH_SHORT).show()
                 }
             }
             // create and show the alert dialog
