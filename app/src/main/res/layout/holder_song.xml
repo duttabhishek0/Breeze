@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/music_item_normal_container"
-    android:layout_margin="4dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
 
 
     <androidx.cardview.widget.CardView
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="8dp"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="30dp"
         app:layout_constraintDimensionRatio="2:2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,7 +21,6 @@
             android:id="@+id/music_item_avatar_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/placeholde"
             android:scaleType="fitXY"
             app:layout_constraintDimensionRatio="2:2"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,16 +34,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:padding="4dp"
         android:ellipsize="end"
         android:gravity="center"
         android:lineSpacingExtra="5dp"
         android:maxLines="1"
+        android:padding="4dp"
         android:textAlignment="center"
-        android:textSize="@dimen/subheading1"
         android:textColor="@color/colorTextPrimary"
-        app:layout_constraintTop_toBottomOf="@+id/music_item_card_view"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="@dimen/subheading1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_item_card_view" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
