@@ -9,7 +9,7 @@ import com.android.musicplayer.data.source.local.dao.SongDao
  * To manage data items that can be accessed, updated
  * & maintain relationships between them
  *
- * @Created by ZARA
+ * @Created by Abhishek
  */
 @Database(entities = [Song::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
