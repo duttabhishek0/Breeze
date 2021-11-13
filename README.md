@@ -1,8 +1,12 @@
 # Breeze
 A modern music-playing app, built using Modern-Architectural pracices. 
 
-
-<!-- <a href="https://ibb.co/XVctkCb"><img src="https://i.ibb.co/HX5qpHV/Screenshot-2021-09-25-111334.jpg" alt="Screenshot-2021-09-25-111334" border="0" /></a> -->
+<p align="center">
+  <img src ="https://user-images.githubusercontent.com/56694152/141653023-a9a9c279-2e01-41ff-af0a-1e5957c1b6e7.jpeg" width="250" height="500" />
+  <img src ="https://user-images.githubusercontent.com/56694152/141653024-43a6eab2-411b-4fea-a910-188ef99a42fa.jpeg" width="250" height="500" />
+  <img src ="https://user-images.githubusercontent.com/56694152/141653026-cd097f59-1448-47d1-ae0b-8f36f405442d.jpeg" width="250" height="500" />
+  
+</p>
 
 
 ## License
