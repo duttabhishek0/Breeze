@@ -21,6 +21,7 @@
             android:id="@+id/music_item_avatar_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/placeholde"
             android:scaleType="fitXY"
             app:layout_constraintDimensionRatio="2:2"
             app:layout_constraintStart_toStartOf="parent"
