@@ -9,7 +9,7 @@ import java.util.ArrayList
  *
  * and also to make an interaction between [PlayerService] & [MediaAdapter]
  *
- * @author ZARA
+ * @author Abhishek
  * */
 interface OnMediaAdapterCallback {
 

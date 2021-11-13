@@ -8,7 +8,7 @@ import java.util.ArrayList
  *
  * and to return result from [ExoPlayerManager]
  *
- * @author Zara
+ * @author Abhishek
  * */
 interface OnExoPlayerManagerCallback {
 

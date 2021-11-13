@@ -28,7 +28,7 @@ import com.google.android.exoplayer2.util.Util
  * This class is responsible for managing the player(actions, state, ...) using [ExoPlayer]
  *
  *
- * @author ZARA
+ * @author Abhishek
  * */
 class ExoPlayerManager(val context: Context) : OnExoPlayerManagerCallback {
 
@@ -110,6 +110,10 @@ class ExoPlayerManager(val context: Context) : OnExoPlayerManagerCallback {
     }
 
 
+    /**
+     * Set the Current Song State
+     *
+     */
     private fun setCurrentSongState() {
         var state = 0
         if (mExoPlayer == null) {

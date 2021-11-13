@@ -11,7 +11,7 @@ import java.util.*
 /**
  * This class is used to interact with [ExoPlayerManager] & [PlaylistManager]
  *
- * @author ZARA
+ * @author Abhishek
  * */
 class MediaAdapter(
     private val onExoPlayerManagerCallback: OnExoPlayerManagerCallback,

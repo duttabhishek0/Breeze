@@ -9,7 +9,7 @@ import kotlin.math.max
  * This class is used to manage the playlist
  * (normal list, onShuffle list, repetition, ...)
  *
- * @author ZARA
+ * @author Abhishek
  **/
 class PlaylistManager(private val mListener: OnSongUpdateListener) {
 

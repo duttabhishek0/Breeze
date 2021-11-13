@@ -23,7 +23,7 @@ import java.io.File
 /**
  * This class is responsible for managing Notification
  *
- * @author ZARA
+ * @author Abhishek
  * */
 class MediaNotificationManager @Throws(RemoteException::class)
 constructor(private val mService: SongPlayerService) : BroadcastReceiver() {

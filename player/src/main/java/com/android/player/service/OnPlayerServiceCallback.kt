@@ -5,7 +5,7 @@ import com.android.player.model.ASong
 /**
  * To make an interaction between [SongPlayerService] & [BaseSongPlayerActivity]
  *
- * @author ZARA
+ * @author Abhishek
  * */
 interface OnPlayerServiceCallback {
 
