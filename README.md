@@ -2,8 +2,8 @@
 <h1 align="center"><b>Breeze</b></h1> 
 <h4 align="center">A modern music-playing app, built using Modern-Architectural practices.</h4>
 <p align="center">
-    <a href="https://github.com/oxygencobalt/Auxio/releases/">
-        <img alt="GitHub release" src="https://img.shields.io/static/v1?label=Tag&message=v1.4.2&color=0D5AF5">
+    <a href="https://github.com/duttabhishek0/Breeze/releases/">
+        <img alt="GitHub release" src="https://img.shields.io/static/v1?label=Tag&message=v1.0.0&color=0D5AF5">
     </a>
     <a href="https://www.gnu.org/licenses/gpl-3.0">
         <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg">
