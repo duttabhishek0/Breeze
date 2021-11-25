@@ -96,6 +96,9 @@ fun update(song: Song)
 
 In this project, `Koin` is used for dependecny injection. 
 
+<p align = "center">
+    <img src="https://user-images.githubusercontent.com/56694152/143432804-66c6246d-f9f8-4602-83cc-c34639e43774.png" height = 450 width = 800/>
+</p>
 
 ## License
 
@@ -114,3 +117,4 @@ In this project, `Koin` is used for dependecny injection.
    See the License for the specific language governing permissions and
    limitations under the License.
  ```
+
