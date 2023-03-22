@@ -2,7 +2,7 @@
 
 buildscript {
     ext.kotlin_version = '1.8.10'
-    ext.room_version = "2.4.3"
+    ext.room_version = "2.5.1"
     ext.koin_version = "2.2.2"
     ext.koin_architecture_version = "0.8.2"
     ext.arch_version = "1.1.1"
